@@ -113,3 +113,24 @@ Quality Review / Correction
         │
         ▼
 QMS Complaint Ledger
+## Screenshots
+
+### 1. Initial Complaint Interface
+
+![Initial Complaint Interface](screenshots/01-home.png)
+
+### 2. AI Complaint Analysis
+
+![AI Complaint Analysis](screenshots/02-ai-analysis.png)
+
+### 3. AI-Powered Correction
+
+![AI Correction](screenshots/03-ai-correction.png)
+
+### 4. QMS Ledger Commit
+
+![QMS Commit](screenshots/04-qms-commit.png)
+
+### 5. QMS Complaint Ledger
+
+![QMS Complaint Ledger](screenshots/05-qms-ledger.png)
