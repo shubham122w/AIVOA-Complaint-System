@@ -2,117 +2,119 @@
 
 An AI-powered Customer Complaint Management System designed for pharmaceutical manufacturing.
 
-The system helps Quality Assurance teams capture, analyze, classify, and manage customer complaints using AI, LangGraph, FastAPI, React, Redux, and a QMS complaint ledger.
+## Features
 
----
+- AI complaint data extraction
+- PDF complaint analysis
+- AI severity and priority classification
+- AI risk assessment
+- Natural-language complaint correction
+- Complaint completeness checker
+- Root cause recommendation
+- Duplicate complaint detection
+- CAPA recommendation
+- Complaint summary generation
+- QMS complaint ledger
 
-## 🚀 Features
+## Tech Stack
 
-### AI-Powered Complaint Processing
-
-- Extract complaint information from unstructured text
-- Analyze uploaded PDF complaints
-- Automatically populate complaint form fields
-- Conversational correction of extracted information
-- AI-powered severity and risk assessment
-- Suggested next actions
-
-### AI Tools
-
-- **Complaint Completeness Checker**
-  - Identifies missing complaint information
-  - Highlights fields that require additional details
-
-- **Root Cause Recommendation**
-  - Suggests possible root causes
-  - Recommends investigation areas and records to review
-
-- **Duplicate Complaint Detection**
-  - Compares a new complaint against existing QMS complaints
-  - Provides confidence and matching complaint information
-
-- **CAPA Recommendation**
-  - Suggests corrective and preventive actions
-  - Recommends QA verification and responsible functions
-
-- **Complaint Summary**
-  - Generates a concise complaint summary
-  - Provides key details, risk overview, and recommended action
-
-- **AI Risk Classification**
-  - Classifies overall complaint risk
-  - Determines severity and priority
-  - Provides risk factors and rationale
-
-### QMS Complaint Ledger
-
-- Commit processed complaints to the database
-- View previously committed complaints
-- Track complaint ID, customer, product, batch, severity, priority, and complaint type
-
----
-
-## 🏗️ Technology Stack
-
-### Frontend
 - React
 - Redux Toolkit
-- Axios
-- Vite
-- Google Inter Font
-
-### Backend
-- Python
 - FastAPI
-- Pydantic
-- SQLAlchemy
-
-### AI
+- Python
 - LangGraph
 - Groq
-- LLM-powered structured complaint analysis
+- MySQL / PostgreSQL
+- PyPDF
+- Axios
+- Vite
 
-### Database
-- MySQL / PostgreSQL compatible architecture
+## AI Workflow
 
-### Document Processing
-- PDF text extraction using PyPDF
-
----
-
-## 🧠 AI Workflow
-
-```text
-Customer Complaint
-        │
-        ▼
-Text / PDF Input
-        │
-        ▼
-FastAPI Backend
-        │
-        ▼
-LangGraph AI Workflow
-        │
-        ├── Complaint Data Extraction
-        ├── Risk Assessment
-        ├── Severity Classification
-        └── Suggested Next Action
-        │
-        ▼
-Structured Complaint Data
-        │
-        ▼
-React + Redux Frontend
-        │
-        ▼
-AI Copilot Risk Assessment
-        │
-        ▼
-Quality Review / Correction
-        │
-        ▼
+Customer Complaint  
+↓  
+Text / PDF Input  
+↓  
+FastAPI Backend  
+↓  
+LangGraph AI Workflow  
+↓  
+Complaint Data Extraction  
+↓  
+Risk Assessment  
+↓  
+Severity & Priority Classification  
+↓  
+React + Redux Frontend  
+↓  
+AI Copilot  
+↓  
+Quality Review / Correction  
+↓  
 QMS Complaint Ledger
+
+## AI Capabilities
+
+### Complaint Data Extraction
+
+The AI extracts:
+
+- Customer name
+- Product name
+- Product strength
+- Batch / Lot number
+- Manufacturing date
+- Expiry date
+- Affected quantity
+- Complaint category
+- Complaint description
+- Severity
+- Priority
+- Suggested next action
+- Initial risk assessment
+
+### PDF Complaint Analysis
+
+Users can upload a customer complaint PDF and the AI extracts relevant complaint information automatically.
+
+### AI-Powered Correction
+
+Users can correct extracted information using natural language.
+
+Example:
+
+> Change the batch number to BMX240602 and affected quantity to 48 capsules.
+
+### Complaint Completeness Checker
+
+Checks whether important complaint information is available before committing the complaint.
+
+### Root Cause Recommendation
+
+Generates possible root causes and recommended investigation steps.
+
+### Duplicate Complaint Detection
+
+Compares the current complaint with existing QMS complaints and identifies possible duplicates.
+
+### CAPA Recommendation
+
+Generates corrective actions, preventive actions, and QA verification recommendations.
+
+### Complaint Summary
+
+Generates a concise QA-ready summary of the complaint.
+
+### AI Risk Classification
+
+Provides:
+
+- Risk level
+- Severity
+- Priority
+- Risk factors
+- Classification rationale
+- QA attention recommendation
 
 ## Screenshots
 
@@ -135,3 +137,15 @@ QMS Complaint Ledger
 ### 5. QMS Complaint Ledger
 
 ![QMS Complaint Ledger](screenshots/05-qms-ledger.png)
+
+## Project Structure
+
+```text
+AIVOA-Complaint-System/
+├── backend/
+├── frontend/
+├── screenshots/
+├── .gitignore
+├── package.json
+├── package-lock.json
+└── README.md
